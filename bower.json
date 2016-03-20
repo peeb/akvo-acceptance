@@ -1,0 +1,16 @@
+{
+  "name": "akvo-acceptance",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akvo/akvo-acceptance"
+  },
+  "homepage": "https://github.com/akvo/akvo-acceptance",
+  "authors": [
+    "Paul Burt <paul@akvo.org>"
+  ],
+  "description": "Akvo acceptance testing suite",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "purescript-webdriver": "^0.17.0"
+  }
+}

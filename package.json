@@ -1,0 +1,20 @@
+{
+  "name": "akvo-acceptance",
+  "description": "Akvo acceptance testing suite",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akvo/akvo-acceptance.git"
+  },
+  "license": "Apache-2.0",
+  "authors": [
+    "Paul Burt <paul@akvo.org>"
+  ],
+  "scripts": {
+    "postinstall": "bower install",
+    "test": "pulp test",
+    "watch": "pulp --watch test"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^2.53.1"
+  }
+}
