@@ -2,9 +2,9 @@
   "name": "akvo-acceptance",
   "repository": {
     "type": "git",
-    "url": "https://github.com/akvo/akvo-acceptance"
+    "url": "https://github.com/peeb/akvo-acceptance"
   },
-  "homepage": "https://github.com/akvo/akvo-acceptance",
+  "homepage": "https://github.com/peeb/akvo-acceptance#readme",
   "authors": [
     "Paul Burt <paul@akvo.org>"
   ],
