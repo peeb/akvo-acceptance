@@ -11,7 +11,7 @@ import Control.Monad.Aff.Console (log)
 import Data.Maybe (maybe)
 
 import Selenium (byId, clickEl, findElement, get, getTitle, quit, sendKeysEl, wait)
-import Selenium.Browser (Browser(FireFox))
+import Selenium.Browser (Browser(..))
 import Selenium.Builder (browser, build)
 import Selenium.Types (SELENIUM)
 

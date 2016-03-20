@@ -1,5 +1,7 @@
 {
   "name": "akvo-acceptance",
+  "description": "Akvo acceptance testing suite",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/peeb/akvo-acceptance"
@@ -8,8 +10,6 @@
   "authors": [
     "Paul Burt <paul@akvo.org>"
   ],
-  "description": "Akvo acceptance testing suite",
-  "license": "Apache-2.0",
   "dependencies": {
     "purescript-webdriver": "^0.17.0"
   }
