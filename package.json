@@ -1,19 +1,9 @@
 {
   "private": true,
-  "name": "akvo-acceptance",
-  "description": "Akvo acceptance testing suite",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/peeb/akvo-acceptance.git"
-  },
-  "license": "Apache-2.0",
-  "authors": [
-    "Paul Burt <paul@akvo.org>"
-  ],
   "scripts": {
     "postinstall": "bower install",
-    "test": "pulp test",
-    "watch": "pulp --watch test"
+    "start": "pulp --watch test",
+    "test": "pulp test"
   },
   "dependencies": {
     "selenium-webdriver": "^2.53.1"

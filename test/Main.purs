@@ -10,11 +10,12 @@ import Control.Monad.Aff.Console (log)
 
 import Data.Maybe (maybe)
 
-import Selenium
-import Selenium.Browser
-import Selenium.Builder
-import Selenium.Types
+import Selenium (byId, clickEl, findElement, get, getTitle, quit, sendKeysEl, wait)
+import Selenium.Browser (Browser(FireFox))
+import Selenium.Builder (browser, build)
+import Selenium.Types (SELENIUM)
 
+-- | Run tests
 main :: Eff (selenium :: SELENIUM, console :: CONSOLE, err :: EXCEPTION) Unit
 main = do
   launchAff do
@@ -24,7 +25,7 @@ main = do
       findElement driver >>=
       maybe noInput (goInput driver)
   where
-  noInput = void $ log "No input :("
+  noInput = void $ log "Couldn't find any input :("
 
   goInput driver el = do
     sendKeysEl "Akvo" el
@@ -32,7 +33,7 @@ main = do
       findElement driver >>=
       maybe noButton (goButton driver)
 
-  noButton = void $ log "No submit button :("
+  noButton = void $ log "Couldn't find a submit button :("
 
   goButton driver button = do
     clickEl button
